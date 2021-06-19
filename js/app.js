@@ -19,3 +19,10 @@ $(document).ready(function () {
       "<button type='button' class='slick-next pull-right'><div class='news__scroll'><div class='news__arrow'></div></div></button>",
   });
 });
+
+const mapWrapper = document.getElementById("map");
+const map = new google.maps.Map(mapWrapper, {
+  center: { lat: 40.705773493742925, lng: -73.97549621811903 }, // координати центру
+  zoom: 8, // зум
+  mapId: "dd9215a291db65b9",
+});

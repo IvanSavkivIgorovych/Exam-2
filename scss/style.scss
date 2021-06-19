@@ -8,6 +8,8 @@ body {
   font-family: Gotham, sans-serif;
   font-weight: normal;
 }
-@import "_header";
+@import "header";
 @import "_whatWeDo";
 @import "_latestNews";
+@import "gallery";
+@import "map";
