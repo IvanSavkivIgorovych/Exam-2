@@ -37,6 +37,11 @@ body {
   font-weight: normal;
 }
 
+.slick-slider {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .header {
   position: relative;
   color: #fff;
@@ -238,5 +243,122 @@ header.header4 {
 
 .slick-dots li.slick-active button {
   background-color: #fff;
+}
+
+.whatWeDo {
+  padding: 128px 0 100px;
+}
+
+.whatWeDo__header {
+  position: relative;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin-bottom: 100px;
+}
+
+.whatWeDo__header::before {
+  content: "";
+  width: 153px;
+  height: 1px;
+  background-color: #2c4058;
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  margin-left: -76px;
+}
+
+.whatWeDo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whatWeDo__item:not(:last-child) {
+  margin-bottom: 140px;
+}
+
+.whatWeDo__item:last-child .whatWeDo__info {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.whatWeDo__item:last-child img {
+  -webkit-box-shadow: 215px -70px 0px #7e5aff;
+          box-shadow: 215px -70px 0px #7e5aff;
+}
+
+.whatWeDo__item img {
+  -webkit-box-shadow: -215px -70px 0px #55b7ff;
+          box-shadow: -215px -70px 0px #55b7ff;
+}
+
+.whatWeDo__info {
+  padding-left: 40px;
+}
+
+.whatWeDo__info--right {
+  padding-right: 40px;
+}
+
+.whatWeDo__subheading {
+  font-size: 22px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #2c4058;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+.whatWeDo__heading {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #2c4058;
+}
+
+.whatWeDo__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4b5562;
+  margin-bottom: 32px;
+}
+
+.whatWeDo__button {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c4058;
+  background: none;
+  border: 1px solid #2c4058;
+  cursor: pointer;
+  padding: 20px 40px;
+  margin-bottom: 44px;
+}
+
+.whatWeDo__button:hover {
+  color: #fff;
+  background: #2c4058;
+}
+
+.whatWeDo__address {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.whatWeDo__address img {
+  margin-right: 8px;
 }
 /*# sourceMappingURL=style.css.map */
