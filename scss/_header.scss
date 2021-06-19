@@ -117,6 +117,43 @@
     margin-top: 150px;
   }
 }
+.header__slider {
+  .slick-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -96px;
+    right: 40px;
+    list-style-type: none;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    button {
+      display: block;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border-radius: 50%;
+
+      border: 1px solid #fff;
+      background-color: transparent;
+
+      text-indent: -9999px;
+    }
+
+    li.slick-active button {
+      background-color: #fff;
+    }
+  }
+}
 header.header2 {
   background-image: linear-gradient(
       rgba(85, 183, 255, 0.92),
@@ -137,39 +174,4 @@ header.header4 {
       rgba(125, 89, 255, 0.81)
     ),
     url(../img/Photo1-2.jpg);
-}
-.slick-dots {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 1rem 0;
-  position: absolute;
-  top: 50%;
-  margin-top: -96px;
-  right: 40px;
-  list-style-type: none;
-
-  li {
-    &:not(:last-child) {
-      margin-bottom: 40px;
-    }
-  }
-
-  button {
-    display: block;
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    border-radius: 50%;
-
-    border: 1px solid #fff;
-    background-color: transparent;
-
-    text-indent: -9999px;
-  }
-
-  li.slick-active button {
-    background-color: #fff;
-  }
 }
