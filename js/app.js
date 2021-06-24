@@ -50,6 +50,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".news__slider").slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
     accessibility: true,
     dots: true,
     infinite: true,
