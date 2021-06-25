@@ -738,9 +738,10 @@ button.slick-next.pull-right .news__arrow {
 }
 
 .footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 183, 255, 0.92)), to(rgba(125, 89, 255, 0.81))), url(../img/BGF.jpg) no-repeat bottom center;
+  background: linear-gradient(rgba(85, 183, 255, 0.92), rgba(125, 89, 255, 0.81)), url(../img/BGF.jpg) no-repeat bottom center;
   padding: 201px 0 207px;
   position: relative;
-  background: linear-gradient(63.43deg, #55b7ff 14.81%, #7d59ff 81.48%);
 }
 
 .footer .touch {

@@ -1,7 +1,11 @@
 .footer {
+  background: linear-gradient(
+      rgba(85, 183, 255, 0.92),
+      rgba(125, 89, 255, 0.81)
+    ),
+    url(../img/BGF.jpg) no-repeat bottom center;
   padding: 201px 0 207px;
   position: relative;
-  background: linear-gradient(63.43deg, #55b7ff 14.81%, #7d59ff 81.48%);
   .touch {
     background: #fff url(../img/citylight.png) no-repeat bottom center;
     background-size: contain;
