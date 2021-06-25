@@ -9,7 +9,8 @@ body {
   font-weight: normal;
 }
 @import "header";
-@import "_whatWeDo";
-@import "_latestNews";
+@import "whatWeDo";
+@import "latestNews";
 @import "gallery";
 @import "map";
+@import "footer";

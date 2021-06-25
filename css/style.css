@@ -723,12 +723,60 @@ button.slick-next.pull-right .news__arrow {
 }
 
 .gallery__wrapper .gallery__item--1:hover {
-  -webkit-transition: 0.2s background ease-in-out;
-  transition: 0.2s background ease-in-out;
   background: url(../img/Union.png) no-repeat center center, url(../img/Image.jpg) no-repeat center center;
 }
 
 #map {
   height: 700px;
+}
+
+.footer {
+  background: linear-gradient(63.43deg, #55b7ff 14.81%, #7d59ff 81.48%);
+  opacity: 0.9;
+}
+
+.footer .touch {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2c4058;
+  width: 700px;
+  margin: 0 auto;
+  padding: 84px 60px 79px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px -4px 15px rgba(133, 133, 133, 0.2);
+          box-shadow: 0px -4px 15px rgba(133, 133, 133, 0.2);
+}
+
+.footer .touch__addressWr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  grid-gap: 50px;
+}
+
+.footer .touch__header {
+  position: relative;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin-bottom: 50px;
+}
+
+.footer .touch__header::before {
+  content: "";
+  width: 153px;
+  height: 1px;
+  background-color: #2c4058;
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  margin-left: -76px;
 }
 /*# sourceMappingURL=style.css.map */

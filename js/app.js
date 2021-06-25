@@ -67,6 +67,11 @@ $(document).ready(function () {
 const mapWrapper = document.getElementById("map");
 const map = new google.maps.Map(mapWrapper, {
   center: { lat: 40.705773493742925, lng: -73.97549621811903 }, // координати центру
-  zoom: 8, // зум
+  zoom: 13, // зум
   mapId: "dd9215a291db65b9",
+});
+new google.maps.Marker({
+  position: { lat: 40.70425692213143, lng: -73.90120936090999 }, // координати
+  map: map, // об'єкт карти
+  icon: "../img/Pin.png", // шлях до картинки
 });

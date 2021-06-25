@@ -56,7 +56,6 @@
       grid-row-start: 1;
       grid-row-end: 3;
       &:hover {
-        transition: 0.2s background ease-in-out;
         background: url(../img/Union.png) no-repeat center center,
           url(../img/Image.jpg) no-repeat center center;
       }
