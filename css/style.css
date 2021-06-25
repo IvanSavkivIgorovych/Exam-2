@@ -231,8 +231,8 @@ body {
 }
 
 .header__slider .slick-dots li:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .header__slider .slick-dots li:not(:last-child) {
@@ -546,6 +546,11 @@ header.header4 {
   margin-left: -109px;
 }
 
+.news__slider .slick-dots li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .news__slider .slick-dots li:not(:last-child) {
   margin-right: 42px;
 }
@@ -670,10 +675,6 @@ button.slick-next.pull-right .news__arrow {
   margin-left: -76px;
 }
 
-.gallery .right__img {
-  text-align: right;
-}
-
 .gallery__button {
   font-weight: normal;
   font-size: 14px;
@@ -695,6 +696,36 @@ button.slick-next.pull-right .news__arrow {
 
 .gallery__wrapper {
   margin-bottom: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery__wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__wrapper .gallery__item--1 {
+  background: url(../img/Image.jpg) no-repeat center center;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__wrapper .gallery__item--1:hover {
+  -webkit-transition: 0.2s background ease-in-out;
+  transition: 0.2s background ease-in-out;
+  background: url(../img/Union.png) no-repeat center center, url(../img/Image.jpg) no-repeat center center;
 }
 
 #map {
