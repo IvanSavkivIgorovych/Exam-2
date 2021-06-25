@@ -42,7 +42,8 @@
     }
   }
 }
-.header__socialItem {
+.header__socialItem,
+.footer__socialItem {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -52,7 +53,9 @@
   }
 }
 .header__logoLink,
-.header__socialLink {
+.header__socialLink,
+.footer__logoLink,
+.footer__socialLink {
   display: inline-block;
   font-size: 0;
   &:hover {
@@ -60,7 +63,8 @@
     opacity: 0.5;
   }
 }
-.header__socialLink {
+.header__socialLink,
+.footer__socialLink {
   width: 40px;
   height: 40px;
   display: flex;

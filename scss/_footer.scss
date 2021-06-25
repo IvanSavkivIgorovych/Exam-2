@@ -1,15 +1,19 @@
 .footer {
+  padding: 201px 0 207px;
+  position: relative;
   background: linear-gradient(63.43deg, #55b7ff 14.81%, #7d59ff 81.48%);
-  opacity: 0.9;
   .touch {
+    background: #fff url(../img/citylight.png) no-repeat bottom center;
+    background-size: contain;
+
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
     color: #2c4058;
-    width: 700px;
+    width: 770px;
     margin: 0 auto;
     padding: 84px 60px 79px;
-    background: #ffffff;
+    opacity: 1;
     box-shadow: 0px -4px 15px rgba(133, 133, 133, 0.2);
     &__addressWr {
       display: grid;
@@ -37,5 +41,91 @@
         margin-left: -76px;
       }
     }
+    &__list {
+      list-style: none;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 12px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 41px;
+      }
+    }
+    &__link {
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+      color: #2c4058;
+    }
+    &__emailWrapper {
+      input:not(:last-child) {
+        padding-bottom: 16px;
+        width: 100%;
+        line-height: 18px;
+        color: #2c4058;
+        &::placeholder {
+          color: #4b5562;
+          opacity: 0.5;
+        }
+        border: none;
+        border-bottom: 1px solid #2c4058;
+        &:focus {
+          outline: none;
+        }
+      }
+      input:first-child {
+        margin-bottom: 38px;
+      }
+      input:nth-child(2) {
+        margin-bottom: 28px;
+      }
+      input[type="submit"] {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2c4058;
+        border-radius: 0;
+        background-color: #fff;
+        cursor: pointer;
+        padding: 18px 42px;
+        border: 1px solid #2c4058;
+        &:hover {
+          background-color: #2c4058;
+          color: #fff;
+        }
+      }
+    }
+    &__form {
+      text-align: right;
+    }
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    margin-left: -385px;
+  }
+  &__socialWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__social {
+    display: flex;
+  }
+  &__wr {
+    width: 770px;
+    margin: 0 auto;
+  }
+  small {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
   }
 }

@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Monticello</title>
   </head>
@@ -329,52 +325,89 @@
     <section id="map"></section>
 
     <footer class="footer">
-      <div class="touch">
-        <h2 class="touch__header">Get in Touch</h2>
-        <div class="touch__addressWr">
-          <div class="touch__address">
-            <ul class="touch__list">
-              <li class="touch__item">
-                <img src="img/Vector.png" alt="Marker" /> 91 Nolan Extensions
-                Suite 670
-              </li>
-              <li class="touch__item">
-                <img src="img/Vector-1.png" alt="Telefon" /><a
-                  class="touch__link"
-                  href="tel:+001 356-868-2454"
-                  >+001 356-868-2454</a
-                >
-              </li>
-              <li class="touch__item">
-                <img src="img/Vector-2.png" alt="Mail" /><a
-                  class="touch__link"
-                  href="mailto:gahuy93@gmail.com"
-                >
-                  gahuy93@gmail.com</a
-                >
-              </li>
-              <li class="touch__item">
-                <img src="img/Vector-3.png" alt="Work Time" />From 07:05AM to
-                19:30PM
-              </li>
-            </ul>
-          </div>
-          <div class="touch__email">
-            <form class="touch__form" action="" method="get">
-              <input class="touch__name" type="text" name="name" />
-              <input class="touch__email" type="email" name="email" />
-              <input class="touch__submit" type="submit" value="submit" />
-            </form>
+      <div class="touch_wr">
+        <div class="touch">
+          <h2 class="touch__header">Get in Touch</h2>
+          <div class="touch__addressWr">
+            <div class="touch__address">
+              <ul class="touch__list">
+                <li class="touch__item">
+                  <img src="img/Vector.png" alt="Marker" /> 91 Nolan Extensions
+                  Suite 670
+                </li>
+                <li class="touch__item">
+                  <img src="img/Vector-1.png" alt="Telefon" /><a
+                    class="touch__link"
+                    href="tel:+001 356-868-2454"
+                    >+001 356-868-2454</a
+                  >
+                </li>
+                <li class="touch__item">
+                  <img src="img/Vector-2.png" alt="Mail" /><a
+                    class="touch__link"
+                    href="mailto:gahuy93@gmail.com"
+                  >
+                    gahuy93@gmail.com</a
+                  >
+                </li>
+                <li class="touch__item">
+                  <img src="img/Vector-3.png" alt="Work Time" />From 07:05AM to
+                  19:30PM
+                </li>
+              </ul>
+            </div>
+            <div class="touch__emailWrapper">
+              <form class="touch__form" action="" method="get">
+                <input
+                  class="touch__name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+                <input
+                  class="touch__email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <input class="touch__submit" type="submit" value="submit" />
+              </form>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="footer__wr">
+        <div class="footer__socialWrapper">
+          <a class="footer__logoLink" href="#"
+            ><img src="img/Logo.png" alt="Logo"
+          /></a>
+          <div class="footer__social">
+            <div class="footer__socialItem">
+              <a class="footer__socialLink" href=""
+                ><img src="img/Facebook.png" alt="Facebook"
+              /></a>
+            </div>
+            <div class="footer__socialItem">
+              <a class="footer__socialLink" href=""
+                ><img src="img/Twitter.png" alt="Twitter"
+              /></a>
+            </div>
+            <div class="footer__socialItem">
+              <a class="footer__socialLink" href=""
+                ><img src="img/Instagram.png" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <small
+          >Copyrights &copy; 2017 Monticello Group | Made with &#9825; by Ga
+          Huy</small
+        >
       </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <script src="js/slick.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo344n1w-aqzgyPNuvD2_icjLNjYRzfFA&v=weekly"></script>
     <script src="js/app.js"></script>
   </body>
